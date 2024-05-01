@@ -48,6 +48,48 @@ body{
     height: calc(100vw * 30 / 100);
 }
 
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* column-gap: 20px;
+    row-gap: 30px; */
+    gap: 20px 30px;
+    justify-content: space-around;
+}
+
+.tarjetas .card{
+    background-color: rgb(225, 213, 153);
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 5px 5px 8px #000;
+    padding: 10px;
+    aspect-ratio: 700/800;
+}
+
+.tarjetas .card:hover{
+    background-color: rgb(128, 128, 128, 0.4);
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.tarjetas .card img{
+    display: block;
+    width: 30%;
+    margin: auto;
+}
+
+.tarjetas .contenido p:first-child{
+    color: blue;
+    border-bottom: 2px dashed rgb(95, 63, 63);
+    text-align: center;
+    font-weight: bold;
+    
+}
+
 @media screen and (max-width:900px) {
     .row{
         flex-direction: column-reverse;
