@@ -24,6 +24,11 @@ body{
     margin-right: 50px;
 }
 
+h2{
+    margin: 30px;
+    text-align: center;
+}
+
 .row{
     display: flex;
 
@@ -90,8 +95,38 @@ body{
     
 }
 
+/* cuadros */
+
+.cuadro{
+    background-color: rgb(172, 172, 234);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    
+}
+
+
+.cuadro .imagen img{
+    width: 250px;
+}
+
 @media screen and (max-width:900px) {
     .row{
         flex-direction: column-reverse;
+    }
+}
+
+@media  screen and (max-width:850px) {
+    .cuadro{
+        flex-direction: column;
+        width: 100%;
+    }
+    .cuadro .imagen img{
+        width: 150px;
     }
 }
